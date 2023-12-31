@@ -1,0 +1,109 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://127.0.0.1:8000'
+paths:
+  /api/writers:
+    get:
+      summary: ''
+      operationId: getApiWriters
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: true
+                  users:
+                    -
+                      id: 1
+                      name: Admin
+                      email: admin@admin.com
+                      type: Admin
+                      email_verified_at: null
+                      created_at: '2023-12-28T13:25:09.000000Z'
+                      updated_at: '2023-12-28T13:25:09.000000Z'
+                properties:
+                  status:
+                    type: boolean
+                    example: true
+                  users:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        name: Admin
+                        email: admin@admin.com
+                        type: Admin
+                        email_verified_at: null
+                        created_at: '2023-12-28T13:25:09.000000Z'
+                        updated_at: '2023-12-28T13:25:09.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        name:
+                          type: string
+                          example: Admin
+                        email:
+                          type: string
+                          example: admin@admin.com
+                        type:
+                          type: string
+                          example: Admin
+                        email_verified_at:
+                          type: string
+                          example: null
+                        created_at:
+                          type: string
+                          example: '2023-12-28T13:25:09.000000Z'
+                        updated_at:
+                          type: string
+                          example: '2023-12-28T13:25:09.000000Z'
+      tags:
+        - Endpoints
+      security: []
+  /api/auth/login:
+    post:
+      summary: ''
+      operationId: postApiAuthLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/auth/check:
+    post:
+      summary: ''
+      operationId: postApiAuthCheck
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/auth/logout:
+    post:
+      summary: ''
+      operationId: postApiAuthLogout
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

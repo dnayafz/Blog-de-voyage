@@ -1,0 +1,6 @@
+projectKey=blog_ms
+serverUrl=http://localhost:9000
+serverVersion=10.3.0.82913
+dashboardUrl=http://localhost:9000/dashboard?id=blog_ms
+ceTaskId=AYy8aGG0GOg521mLRbiQ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYy8aGG0GOg521mLRbiQ
